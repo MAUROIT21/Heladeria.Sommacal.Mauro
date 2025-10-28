@@ -4,8 +4,13 @@ public class Postre extends ProductoHeladeria implements IVendible {
 
     private final TipoPostre tipoPostre;
 
-    public Postre(String nombre, double precio, Fabricante fabricante, TipoPostre tipoPostre) {
+    public Postre(String nombre, Double precio, Fabricante fabricante, TipoPostre tipoPostre) {
         super(nombre, precio, fabricante);
+        this.tipoPostre = tipoPostre;
+    }
+    
+    public Postre (String nombre, Double precio, String nombreFabricante, String paisFabricante, TipoPostre tipoPostre){
+        super(nombre, precio, nombreFabricante, paisFabricante);
         this.tipoPostre = tipoPostre;
     }
 

@@ -14,14 +14,14 @@ public abstract class ProductoHeladeria implements Comparable<ProductoHeladeria>
         generadorPuntaje = new Random();
     }
 
-    public ProductoHeladeria(String nombre, String precio, Fabricante fabricante) {
+    public ProductoHeladeria(String nombre, Double precio, Fabricante fabricante) {
         this.nombre = nombre;
-        this.precio = Double.parseDouble(precio);
+        this.precio = precio;
         this.fabricante = fabricante;
         this.puntaje = 0;
     }
 
-    public ProductoHeladeria(String nombre, String precio, String nombreFabricante, String paisFabricante) {
+    public ProductoHeladeria(String nombre, Double precio, String nombreFabricante, String paisFabricante) {
         this(nombre, precio, new Fabricante(nombreFabricante, paisFabricante));
     }
 
