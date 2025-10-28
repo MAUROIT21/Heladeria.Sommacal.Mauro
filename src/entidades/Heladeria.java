@@ -106,14 +106,6 @@ public class Heladeria {
         return total;
     }
 
-//    public void mostrarProductos() {
-//        for (ProductoHeladeria p : productos) {
-//            System.out.println("---------------");
-//            System.out.println(p);
-//        }
-//    }
-
-
 @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
