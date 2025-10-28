@@ -40,9 +40,15 @@ public abstract class ProductoHeladeria implements Comparable<ProductoHeladeria>
         return this.puntaje;
     }
 
-    protected static String mostrar(ProductoHeladeria p) {
-        return "\n - Producto: " + p.nombre + " / Fabricante: " + p.fabricante.getFabricante() +
-               " / Precio: $" + p.precio + " / Puntaje: " + p.getPuntaje();
+//    protected static String mostrar(ProductoHeladeria p) {
+//        return "\n - Producto: " + p.nombre + " / Fabricante: " + p.fabricante.getFabricante() +
+//               " / Precio: $" + p.precio + " / Puntaje: " + p.getPuntaje();
+//    }
+    
+    @Override 
+    public String toString(){
+        return "\n - Producto: " + this.getNombre() + "\n - Fabricante: " + this.fabricante.getFabricante() + 
+                    "\n - Puntaje: " + this.getPuntaje();
     }
 
     @Override

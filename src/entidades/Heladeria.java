@@ -106,12 +106,12 @@ public class Heladeria {
         return total;
     }
 
-    public void mostrarProductos() {
-        for (ProductoHeladeria p : productos) {
-            System.out.println("---------------");
-            System.out.println(p);
-        }
-    }
+//    public void mostrarProductos() {
+//        for (ProductoHeladeria p : productos) {
+//            System.out.println("---------------");
+//            System.out.println(p);
+//        }
+//    }
 
 
 @Override
